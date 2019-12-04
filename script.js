@@ -34,7 +34,7 @@ window.addEventListener("load", function(){
                         <h3>${sortedByHoursAstronautArray[i].firstName} ${sortedByHoursAstronautArray[i].lastName}</h3>
                         <ul>
                             <li>Hours in space: ${sortedByHoursAstronautArray[i].hoursInSpace}</li>
-                            <li>Active: ${sortedByHoursAstronautArray[i].active}</li>
+                            <li class="activeStatus${sortedByHoursAstronautArray[i].active}">Active: ${sortedByHoursAstronautArray[i].active}</li>
                             <li>Skills: ${sortedByHoursAstronautArray[i].skills.join(", ")}</li>
                         </ul>
                     </div>
@@ -42,14 +42,12 @@ window.addEventListener("load", function(){
                 </div>
                 `;
                 divContainer.innerHTML+= astronautBio;
-
             }
 
             divContainer.innerHTML += `
             <h4>Number of Astronauts: ${sortedByHoursAstronautArray.length}</h4>
             `;
-
-             
+            
         });
     });
 });
