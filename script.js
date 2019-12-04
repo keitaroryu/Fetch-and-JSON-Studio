@@ -38,7 +38,7 @@ window.addEventListener("load", function(){
                             <li>Skills: ${sortedByHoursAstronautArray[i].skills.join(", ")}</li>
                         </ul>
                     </div>
-                    <img class="avatar" src="images/${sortedByHoursAstronautArray[i].picture}>
+                    <img class="avatar" src=${sortedByHoursAstronautArray[i].picture}>
                 </div>
                 `;
                 divContainer.innerHTML+= astronautBio;
