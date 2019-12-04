@@ -42,7 +42,14 @@ window.addEventListener("load", function(){
                 </div>
                 `;
                 divContainer.innerHTML+= astronautBio;
-            }    
+
+            }
+
+            divContainer.innerHTML += `
+            <h4>Number of Astronauts: ${sortedByHoursAstronautArray.length}</h4>
+            `;
+
+             
         });
     });
 });
