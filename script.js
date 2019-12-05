@@ -3,8 +3,8 @@ window.addEventListener("load", function(){
     fetch("https://handlers.education.launchcode.org/static/astronauts.json").then(function(response){
         response.json().then(function(json){
             
-            function sortAstronautByHoursInSpace(JSON){
-                let astronautsArray = json;
+            function sortAstronautByHoursInSpace(array){
+                let astronautsArray = array;
                 let sortedAstronautArray = [];
                 let inserted;
                 
