@@ -7,6 +7,7 @@ window.addEventListener("load", function(){
                 let astronautsArray = json;
                 let sortedAstronautArray = [];
                 let inserted;
+                
                 for(let i=0; i<astronautsArray.length; i++){
                     inserted = false;
                     for(let j=0; j<sortedAstronautArray.length; j++){
